@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(242, 242, 242);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    box-shadow: 0px 0px 5px grey;
+}
+
+header nav button {
+    background-color: lightgray;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+header nav .btnh {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+header nav button:hover {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    cursor: pointer;
+}
+
+header nav .btnh3 {
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+header nav .btnh3:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.body1 .calculator .head p {
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.body1 .calculator .head {
+    text-align: center;
+    background-color: rgba(80, 92, 169, 0.918);
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.body1 .calculator {
+    width: 25%;
+}
+
+.body1 {
+    margin-top: 10px;
+    padding: 0px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.body1 .calculator .calc input {
+    background-color: white;
+    font-size: x-large;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+/*Foot calculator
+*/
+.body1 .calculator .foot {
+    background-color: rgb(171, 171, 171);
+    display: grid;
+    padding: 5px;
+    width: 100%;
+    gap: 5px;
+    margin-top: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 50px);
+}
+
+.body1 .calculator .foot .comp {
+    background-color: rgb(223, 223, 223);
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+.body1 .calculator .foot  .red{
+    color: red;
+    
+}
+.body1 .calculator .foot .blue{
+    color: blue;
+    
+}
+
+.body1 .calculator .foot .comp:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.body1 .fields .field{
+    border: 2px solid lightgray;
+    width: 100%;
+    padding: 0px 5px;
+    height: 292px;
+}
+.body1 .fields .offnen{
+    background-color: gray;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: end;
+}
+.body1 .fields .offnen button{
+    border: none;
+    background-color: lightgrey;
+    padding: 5px 20px;
+    transition: all ease-in-out 0.2s;
+}
+.body1 .fields .offnen button:hover{
+    background-color: white;
+    border-radius: 5px;
+    transition: all ease-in-out 0.2s;
+}
+.fields{
+    width: 75%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+.menu .btn1{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-right: 10%;
+}
+.menu h2{
+    margin-right: 25%;
+}
+.menu  button{
+    border: none;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgb(139, 139, 139);
+    padding: 7px 13px;
+    transition: all ease-in-out 0.25s;
+    border-radius: 5px;
+}
+.menu button:hover{
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.25s;
+}
+
+
+.main .content{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(7,100px);
+    margin-top: 50px;
+    gap: 0.9px;
+    margin-bottom: 10px;
+    
+    
+}
+.main .content .mcomp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+}
+.main  .content .mred {
+    background-color: red;
+    
+}
+.main  .content .morange{
+    background-color: rgb(232, 137, 13);
+    color: white;
+}
+.main .content .myellow{
+    background-color: yellow;
+}
+.main  .content .mlgreen{
+    background-color: lightgreen;
+}
+.main  .content .maqua{
+    background-color: aqua;
+}
+.main .content .mgrey{
+    background-color: grey;
+}
+.main .content .mblack{
+    background-color: black;
+    color: white;
+}
+.main .content .mviollet{
+    background-color: rgb(174, 8, 189);
+}
+.main .content .mbviollet{
+    background-color: rgb(98, 31, 207);
+}
+.main .content .mblue{
+    background-color: blue;
+}
+.main  .content .mgreen{
+    background-color: green;
+}
+.main .content .msmoke{
+    background-color: rgb(196, 194, 194)
+}
+.main .content .mwhite{
+    background-color: white;
+    color: rgb(5, 143, 12);
+}
+
+footer .finfo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+footer button{
+    border: none;
+    font-size: 18px;
+}
+footer .btn3{
+    background-color: green;
+    padding: 10px 30px;
+    margin: 0px 35px;
+}
+footer .lbtn{
+     background-color: blue;
+    padding: 10px 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+.main .content button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    
+}
+.main .content button:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+    
+}
+.main .content .mblack button {
+    color: white;
+}
+ .main .hidden {
+display: none;
+}
+#orderTotal {
+    border: none;
+    width: 100px;
+    font-size: x-large;
+    text-align: right;
+
+}
+
+ 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="btnh3">
+                <button>Kassierer 127</button>
+                <button>ZwSu</button>
+            </div>
+            <div id="totalDisplay">
+             <input type="text" id="orderTotal" value="0" readonly>
+
+            </div>
+        </nav>
+    </header>
+
+<article class="body1">
+
+<div class="calculator">
+
+<div class="head">
+    <p>0</p>
+    <p>Transaktionsabschluss</p>
+</div>
+
+<div class="calc">
+    <input type="">
+</div>
+
+<div class="foot">
+
+    <button class="comp" onclick="append('7')">7</button>
+    <button class="comp" onclick="append('8')">8</button>
+    <button class="comp" onclick="append('9')">9</button>
+    <button class="comp red">Abbruch</button>
+    <button class="comp" onclick="append('4')">4</button>
+    <button class="comp" onclick="append('5')">5</button>
+    <button class="comp" onclick="append('6')">6</button>
+    <button class="comp blue" onclick="clearAll()">Loschen</button>
+    <button class="comp" onclick="append('1')">1</button>
+    <button class="comp" onclick="append('2')">2</button>
+    <button class="comp" onclick="append('3')">3</button>
+    <button class="comp" onclick="append('*')">*</button>
+    <button class="comp" onclick="append('0')">0</button>
+    <button class="comp" onclick="append(',')">,</button>
+    <button class="comp" onclick="append('00')">00</button>
+    <button class="comp">PLU</button>
+
+</div>
+
+</div>
+
+<div class="fields">
+
+<div class="field"></div>
+
+<div class="offnen">
+    <button>Offnen</button>
+</div>
+
+</div>
+
+</article>
+
+<article class="menu">
+
+<h2>FOOD</h2>
+ 
+<div class="btn1">
+<button  class="btn-toggle" onclick="toggleContent()">Next</button>
+<button>Beginn</button>
+<button onclick="resetOrder()">Loschen</button>
+</div>
+<button>Ende</button>
+</article>
+
+<article class="main" >
+<div class="content" id="content1">
+
+    <div class="mcomp mred"> <button onclick="addItem(11.69)">Whopper Menu</button></div>
+    <div class="mcomp mred"> <button onclick="addItem(13.29)">Double Whop. Menu</button></div>
+    <div class="mcomp mred"> <button onclick="addItem(13.79)">WH Bacon+Cheese Menu</button></div>
+    <div class="mcomp mred"> <button onclick="addItem(14.39)">BK XXL Menu</button></div>
+    <div class="mcomp mred"> <button onclick="addItem(14.79)">Bacon King Menu</button></div>
+    <div class="mcomp morange"><button >Salat statt Pommes</button></div>
+    <div class="mcomp myellow"><button onclick="addItem(5.99)">K-d-M</button></div>
+    <div class="mcomp myellow"><button onclick="addItem(14.39)">Chicken Crunch</button></div>
+    <div class="mcomp mlgreen"><button >SOT</button></div>
+    <div class="mcomp mred"><button onclick="addItem(13.19)">Xtra LongChiliCH Menu</button></div>
+    <div class="mcomp mred"><button onclick="addItem(11.19)">Big King Menu</button></div>
+    <div class="mcomp mred"><button onclick="addItem(10.00)">Whopper Jr. Menu</button></div>
+    <div class="mcomp mred"><button onclick="addItem(11.09)">Long Chicken Menu</button></div>
+    <div class="mcomp mred"><button onclick="addItem(10.99)">Crispy Chicken Menu</button></div>
+    <div class="mcomp morange"><button>Onion Rings statt Pommes</button></div>
+    <div class="mcomp myellow"><button onclick="addItem(14.00)">PB Whopper Crunch</button></div>
+    <div class="mcomp myellow"><button onclick="addItem(14.00)">Whopper Crunch</button></div>
+    <div class="mcomp maqua"><button >Guest Track</button></div>
+    <div class="mcomp mred"><button onclick="addItem(11.99)">9er Nuggets Menu</button></div>
+    <div class="mcomp mred"><button onclick="addItem(14.39)">Kings Crunch</button></div>
+    <div class="mcomp mwhite"><button onclick="addItem(11.50)">Plant-WH Menu</button></div>
+    <div class="mcomp mwhite"><button onclick="addItem(10.99)">Plant-Long CHK Menu</button></div>
+    <div class="mcomp mwhite"><button onclick="addItem(13.94)">Plant-BK XXL Menu</button></div>
+    <div class="mcomp morange"><button onclick="addItem(1.50)">CC Fries statt Pommes</button></div>
+    <div class="mcomp myellow"><button onclick="addItem(19.00)">PB Whopper CHK Dbl Menu</button></div>
+    <div class="mcomp myellow"><button onclick="addItem(20.00)">Whopper CHK Dbl</button></div>
+    <div class="mcomp morange"><button >My BK</button></div>
+    <div class="mcomp mwhite"><button onclick="addItem(11.89)">9er Plant-Nugg Menu</button></div>
+    <div class="mcomp mwhite"><button onclick="addItem()">Kings Selection</button></div>
+    <div class="mcomp mgreen"><button onclick="addItem(9.89)">Kings Salat Menu</button></div>
+    <div class="mcomp mred"><button onclick="addItem(11.59)">Long Chicken CH</button></div>
+    <div class="mcomp mred"><button onclick="addItem(11.49)">Crispy Chicken CH</button></div>
+    <div class="mcomp morange"><button onclick="addItem()">Curly Fries statt Pommes</button></div>
+    <div class="mcomp msmoke"></div>
+    <div class="mcomp mwhite"><button >Naruto</button></div>
+    <div class="mcomp mgrey"><button >APP/BBF</button></div>
+    <div class="mcomp mviollet"><button >MAke it small</button></div>
+    <div class="mcomp mbviollet"><button >Make it Large</button></div>
+    <div class="mcomp mviollet"><button onclick="addItem(9.49)">Douple Cheeseburger</button></div>
+    <div class="mcomp mred"><button onclick="addItem(9.59)">Dbl ChiliCH Menu</button></div>
+    <div class="mcomp mred"><button onclick="addItem(12.19)">Whopper CH Menu</button></div>
+    <div class="mcomp morange"><button onclick="addItem(35.00)">PommBox statt Pommes</button></div>
+    <div class="mcomp mblue"><button>Ketchup</button></div>
+    <div class="mcomp mblue"><button>Pommes Sauce</button></div>
+    <div class="mcomp mwhite"></div>
+    <div class="mcomp morange"><button onclick="addItem(5.99)">Kids Box Hamburger</button></div>
+    <div class="mcomp morange"><button onclick="addItem(5.99)">Kids Box Ketchup-NB</button></div>
+    <div class="mcomp morange"><button onclick="addItem(5.99)">Kids Box Cheeseburger</button></div>
+    <div class="mcomp morange"><button onclick="addItem(5.99)">Kids Box 4er Nagg</button></div>
+    <div class="mcomp morange"><button>ohne Dessert</button></div>
+    <div class="mcomp morange"><button>Sundae statt Quetschie</button></div>
+    <div class="mcomp morange"><button>ohne Spielzeug</button></div>
+    <div class="mcomp morange"><button>Kids + Party</button></div>
+    <div class="mcomp mblack"><button>Tortillas</button></div>
+    <div class="mcomp mblack"><button>Burger+Snacks</button></div>
+    <div class="mcomp mblack"><button>Dessert+Hot Drinks</button></div>
+    <div class="mcomp mblack"><button>Drinks</button></div>
+    <div class="mcomp mblack"><button>Dips+Dressing</button></div>
+    <div class="mcomp mblack"><button>King Pommes</button></div>
+    <div class="mcomp mblack"><button>Saucen</button></div>
+    <div class="mcomp mblack"><button>Getranke Tausch</button></div>
+    <div class="mcomp mblack"><button>Sonder bestellung</button></div>
+    <div class="mcomp mblack"><button>Promo 1</button></div>
+</div>
+
+<div class="content hidden" id="content2">
+    <div class="mcomp mred"> <button onclick="addItem(7.19)">Whopper </button></div>
+    <div class="mcomp mred"> <button onclick="addItem(8.79)">Double Whop. </button></div>
+    <div class="mcomp mred"> <button onclick="addItem(9.29)">WH Bacon+Cheese </button></div>
+    <div class="mcomp mred"> <button onclick="addItem(9.89)">BK XXL </button></div>
+    <div class="mcomp mred"> <button onclick="addItem(10.29)">Bacon King </button></div>
+ 
+    <div class="mcomp myellow"><button onclick="addItem(9.89)">Chicken Crunch</button></div>
+  
+    <div class="mcomp mred"><button onclick="addItem(8.69)">Xtra LongChiliCH </button></div>
+    <div class="mcomp mred"><button onclick="addItem(6.69)">Big King </button></div>
+    <div class="mcomp mred"><button onclick="addItem(5.09)">Whopper Jr. </button></div>
+    <div class="mcomp mred"><button onclick="addItem(6.59)">Long Chicken </button></div>
+    <div class="mcomp mred"><button onclick="addItem(6.49)">Crispy Chicken </button></div>
+   
+    <div class="mcomp myellow"><button onclick="addItem(10.00)">PB Whopper Crunch</button></div>
+    <div class="mcomp myellow"><button onclick="addItem(11.00)">Whopper Crunch</button></div>
+    
+    <div class="mcomp mred"><button onclick="addItem(7.49)">9er Nuggets </button></div>
+    <div class="mcomp mred"><button onclick="addItem(9.89)">Kings Crunch</button></div>
+    <div class="mcomp mwhite"><button onclick="addItem(7.09)">Plant-WH </button></div>
+    <div class="mcomp mwhite"><button onclick="addItem(6.49)">Plant-Long CHK </button></div>
+    <div class="mcomp mwhite"><button onclick="addItem(9.59)">PPlant-BK XXL </button></div>
+    
+    <div class="mcomp myellow"><button onclick="addItem(11.00)">PB Whopper CHK Dbl </button></div>
+    <div class="mcomp myellow"><button onclick="addItem(14.00)">Whopper CHK Dbl</button></div>
+    
+    <div class="mcomp mwhite"><button onclick="addItem(7.09)">9er Plant-Nugg </button></div>
+   >
+    <div class="mcomp mgreen"><button onclick="addItem(5.39)">Kings Salat </button></div>
+</div>
+</article>
+ 
+
+<footer>
+
+<div class="finfo">
+    <button>#1/127</button>
+    <button>PL:1</button>
+    <button class="btn3">/Counter</button>
+    <p>28.7.2025 23:46:41</p>
+</div>
+<button class="lbtn">MANAGER</button>
+</footer>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+
+</html>
